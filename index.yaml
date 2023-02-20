@@ -9,6 +9,33 @@ entries:
           image: dock.mau.dev/mautrix/discord:latest
     apiVersion: v2
     appVersion: latest
+    created: "2023-02-20T21:40:57.805771482Z"
+    description: A Matrix-Discord puppeting bridge.
+    digest: 024cfef3194296d84a48333a2846d2e9b4e41ac7d6459d507328aab3550f888b
+    home: https://github.com/tulir/mautrix-discord
+    keywords:
+    - synapse
+    - chat
+    - matrix
+    - discord
+    maintainers:
+    - email: davidy@funkypenguin.co.nz
+      name: David Young
+    name: mautrix-discord
+    sources:
+    - https://github.com/matrix-org/synapse
+    type: application
+    urls:
+    - https://github.com/funkypenguin/helm-mautrix-discord/releases/download/mautrix-discord-0.1.3/mautrix-discord-0.1.3.tgz
+    version: 0.1.3
+  - annotations:
+      artifacthub.io/changes: |
+        - initial release
+      artifacthub.io/images: |
+        - name: mautrix-discord
+          image: dock.mau.dev/mautrix/discord:latest
+    apiVersion: v2
+    appVersion: latest
     created: "2023-02-20T11:05:43.506249014Z"
     description: A Matrix-Discord puppeting bridge.
     digest: 73ff60fd4427e5bc579682a7d982dd98eee6d649c6b87e319e5485c98916be55
@@ -109,4 +136,4 @@ entries:
     urls:
     - https://github.com/funkypenguin/helm-mautrix-discord/releases/download/mautrix-discord-0.0.2/mautrix-discord-0.0.2.tgz
     version: 0.0.2
-generated: "2023-02-20T11:05:43.506265214Z"
+generated: "2023-02-20T21:40:57.805787482Z"

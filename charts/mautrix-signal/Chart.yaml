@@ -1,0 +1,23 @@
+apiVersion: v2
+type: application
+appVersion: latest
+description: A Matrix-Discord puppeting bridge.
+name: mautrix-discord
+version: 0.0.1
+keywords:
+  - synapse
+  - chat
+  - matrix
+  - discord
+home: https://github.com/tulir/mautrix-discord
+sources:
+  - https://github.com/matrix-org/synapse
+maintainers:
+  - name: David Young
+    email: davidy@funkypenguin.co.nz
+annotations:
+  artifacthub.io/changes: |
+    - initial release
+  artifacthub.io/images: |
+    - name: mautrix-discord
+      image: dock.mau.dev/mautrix/discord:latest

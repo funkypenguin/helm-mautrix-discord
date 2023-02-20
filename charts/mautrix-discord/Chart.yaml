@@ -3,7 +3,7 @@ type: application
 appVersion: latest
 description: A Matrix-Discord puppeting bridge.
 name: mautrix-discord
-version: 0.1.0
+version: 0.1.1
 keywords:
   - synapse
   - chat

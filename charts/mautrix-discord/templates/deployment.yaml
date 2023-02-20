@@ -49,8 +49,8 @@ spec:
       {{- end }}
       initContainers:
         - name: init
-          image: "{{ .Values.image.mautrixdiscord.repository }}:{{ tpl .Values.image.mautrixdiscord.tag . }}"
-          imagePullPolicy: {{ .Values.image.mautrixdiscord.pullPolicy }}
+          image: "{{ .Values.image.repository }}:{{ tpl .Values.image.tag . }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
           command: ["/bin/sh"]
           args:
             - "-c"
@@ -70,8 +70,8 @@ spec:
         - name: mautrix-discord
           securityContext:
             {{- toYaml .Values.securityContext | nindent 12 }}
-          image: "{{ .Values.image.mautrixdiscord.repository }}:{{ tpl .Values.image.mautrixdiscord.tag . }}"
-          imagePullPolicy: {{ .Values.image.mautrixdiscord.pullPolicy }}
+          image: "{{ .Values.image.repository }}:{{ tpl .Values.image.tag . }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - name: http
               containerPort: {{ required "need config.appservice.port" .Values.config.appservice.port }}
